@@ -6,17 +6,19 @@
 // The toLowerCase() method is called on the string "Hello World"
 // No arguments are passed; toLowerCase() has one clear job which is to lowercase all letters that exist in the String
 // The return value is "hello world"
-"Hello World".toLowerCase();
+var hi = "Hello World".toLowerCase();
+// The toLowerCase() method is called on the string "Hello World"
+// No arguments are passed; toLowerCase() has one clear job which is to lowercase all letters that exist in the String
+// The return value is "hello world"
 
+var hi2 = "Hello World".includes("Hello");
+//.include is a boolean that checks if "Hello" is in the string "Hello World", and displays as true if it matches
 
-"Hello World".includes("Hello");
+var hi3 = "Hello World".endsWith("Hello");
+//.endswith function checks the parameters "Hello" to see if the string "Hello world" ends with those parameters, if not it will display as false in this case.
 
-
-"Hello World".endsWith("Hello");
-
-
-"Hello World".endsWith("rld");
-
+var hi4 = "Hello World".endsWith("rld");
+//.endswith function checks the parameters "rld" to see if the string "Hello world" ends with those parameters, it will display as true in the example
 
 
 // SECTION 2: Calling methods on variables assigned to strings.
@@ -32,11 +34,26 @@
 // The console.log() statements prints the return value of the startsWith() method (true) to the console.
 var firstName = "Jeff";
 console.log(firstName.startsWith("J"));
+console.log(firstName.toLowerCase());
+console.log(firstName.toUpperCase());
 
-
+//toLowerCase will make the string firstName go into lowercase. 
+//toUppercase will then counteract that and make the entire string uppercase. 
 
 // SECTION 3: Calling methods on variables assigned to arrays.
 // Declare 2 variables assigned to arrays.
 // Call a different built-in JavaScript method on each of your variables. 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Include comments above each method call explaining the impact and return value of that method.
+function bobsBurgers(){
+    var bobBurgers = ["Cheeseburger", "Hamburger", "SUPER Burger", "Pickle Burger"];
+    bobBurgers.sort();
+    bobBurgers.copyWithin( 1, 3);
+    return bobBurgers;
+}
+
+var blobBurgers = ``;
+console.log(blobBurgers = `This is our menu: ${bobsBurgers()}`);
+
+
+
